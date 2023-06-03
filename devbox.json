@@ -1,0 +1,17 @@
+{
+  "packages": [
+    "go_1_20@latest",
+    "golangci-lint@latest",
+    "ginkgo@latest"
+  ],
+  "shell": {
+    "scripts": {
+      "lint": [
+        "golangci-lint run"
+      ],
+      "test": [
+        "go test -v ./..."
+      ]
+    }
+  }
+}
