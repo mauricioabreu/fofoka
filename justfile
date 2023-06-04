@@ -1,0 +1,2 @@
+test:
+    devbox run test
