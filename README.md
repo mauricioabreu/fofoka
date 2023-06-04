@@ -6,6 +6,12 @@ Gossip is a rumor that is spread by one person to others. Just like epidemics, a
 
 Gossip is a multicast protocol. It differs from centralized multicast protocols by eliminating the need to rely on one node to send a message. All nodes receive the message, but not all nodes need to send messages.
 
+## How does it work?
+
+Gossip protocol is used to share information to other nodes in a network. One of the nodes is randomly selected to spread some information. The nodes that receive the message do the same thing.
+
+Observe the two image below and catch the differences between Gossip and centralized Multicast protocols:
+
 ```mermaid
 ---
 title: Gossip
