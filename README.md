@@ -5,3 +5,33 @@
 Gossip is a rumor that is spread by one person to others. Just like epidemics, a single infected person could later infect the entire world.
 
 Gossip is a multicast protocol. It differs from centralized multicast protocols by eliminating the need to rely on one node to send a message. All nodes receive the message, but not all nodes need to send messages.
+
+```mermaid
+---
+title: Gossip
+---
+graph LR
+    A((Node A)) -->|Gossip| B((Node B));
+    A -->|Gossip| C((Node C))
+    B -->|Gossip| D((Node D))
+    B -->|Gossip| E((Node E))
+    C -->|Gossip| F((Node F))
+    C -->|Gossip| G((Node G))
+    D -->|Gossip| H((Node H))
+    D -->|Gossip| I((Node I))
+```
+
+```mermaid
+---
+title: Centralized Multicast
+---
+graph TD
+    A((Node A)) -->|Gossip| B((Node B))
+    A -->|Gossip| C((Node C))
+    A -->|Gossip| D((Node D))
+    A -->|Gossip| E((Node E))
+    A -->|Gossip| F((Node F))
+    A -->|Gossip| G((Node G))
+    A -->|Gossip| H((Node H))
+    A -->|Gossip| I((Node I))
+```
