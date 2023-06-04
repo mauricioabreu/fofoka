@@ -2,7 +2,8 @@
   "packages": [
     "go_1_20@latest",
     "golangci-lint@latest",
-    "ginkgo@latest"
+    "ginkgo@latest",
+    "just@latest"
   ],
   "shell": {
     "scripts": {
