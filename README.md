@@ -8,7 +8,13 @@ Gossip is a multicast protocol. It differs from centralized multicast protocols 
 
 ## How does it work?
 
-Gossip protocol is used to share information to other nodes in a network. One of the nodes is randomly selected to spread some information. The nodes that receive the message do the same thing.
+Gossip protocol is used to share information to other nodes in a network. Periodically, one of the nodes is randomly selected to spread some information. The nodes that receive the message do the same thing.
+
+Properties:
+
+- Random selection;
+- Turn based (each turn the process repeats);
+- Each node has a partial view of the entire network state.
 
 Observe the two images below and catch the differences between Gossip and centralized Multicast protocols:
 
